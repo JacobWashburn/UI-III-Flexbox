@@ -91,6 +91,7 @@ video {
    font: inherit;
    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +106,21 @@ nav,
 section {
    display: block;
 }
+
 body {
    line-height: 1;
 }
+
 ol,
 ul {
    list-style: none;
 }
+
 blockquote,
 q {
    quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,6 +128,7 @@ q:after {
    content: "";
    content: none;
 }
+
 table {
    border-collapse: collapse;
    border-spacing: 0;
@@ -156,8 +162,8 @@ h5 {
 /*? I left all my old styling in so I could the differences of what it takes. */
 
 .container {
-   margin: 20px 50px;
-   max-width: 100%;
+   margin: 20px auto;
+   max-width: 900px;
 }
 
 /*! start of top-bar styling */
@@ -171,6 +177,7 @@ h5 {
    justify-content: space-between;
 }
 
+/*! nav links */
 .top-bar .top-navigation {
    display: flex;
    /* border: 1px solid red; */
@@ -187,25 +194,29 @@ h5 {
    font-size: 11px;
 }
 
-.logo {
-   display: flex;
-   justify-content: right;
-   /* border: 1px solid green; */
-   /* vertical-align: middle; */
-   /* margin-left: 12%; */
-   /* margin-right: auto; */
-}
+ /* top image */
+
+/*.logo {*/
+/*   display: flex;*/
+/*   justify-content: right;*/
+/*   !* border: 1px solid green; *!*/
+/*   !* vertical-align: middle; *!*/
+/*   !* margin-left: 12%; *!*/
+/*   !* margin-right: auto; *!*/
+/*}*/
 
 /*! start of header styling */
 
 header {
    display: flex;
    align-items: center;
-   justify-content: space-evenly;
+   justify-content: space-between;
    height: 500px;
    /* text-align: center; */
    /* border: 1px solid red; */
 }
+
+/*! services header */
 
 .services1 {
    width: 100%;
@@ -219,22 +230,30 @@ header {
 .services1 h1 {
    font-size: 25px;
 }
+
+.services1 p {
+   line-height: 1.5;
+
+}
+
 .services-header-img {
    width: 100%;
    height: 175px;
    margin-bottom: 20px;
 }
 
+
 header .slogan {
+   margin-left: 100px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   /* position: relative;
-   top: 50px;
-   left: 150px;
-   display: inline-block; */
+   /* position: relative;*/
+   /*top: 50px;*/
+   /*left: 150px;*/
+   /*!*display: inline-block;*!*/
    font-size: 65px;
-   /* border: 1px solid red; */
+   /* border: 1px solid red;*/
    text-align: center;
 }
 
@@ -243,10 +262,10 @@ header .slogan div {
    font-size: 20px;
    width: 170px;
    height: 30px;
-   /* margin-left: auto;
+    margin-left: auto;
    margin-right: auto;
    padding-top: 5px;
-   padding-bottom: 5px; */
+   padding-bottom: 5px;
 }
 
 header .slogan div a {
@@ -254,14 +273,9 @@ header .slogan div a {
    color: rgb(158, 157, 157);
 }
 
-/* header img {
-   position: relative;
-   left: 150px;
-   bottom: 260px;
-   padding-left: 450px;
-} */
 
-/*! start of index description section styling */
+
+ /* start of index description section styling */
 
 .description {
    display: flex;
@@ -344,6 +358,7 @@ header .slogan div a {
 
 .product-services p {
    margin-bottom: 15px;
+   line-height: 1.5;
 }
 
 .product-description .btn {
@@ -402,6 +417,8 @@ header .slogan div a {
 
 .facts p {
    margin-bottom: 15px;
+   line-height: 1.5;
+
 }
 
 .facts ul {
